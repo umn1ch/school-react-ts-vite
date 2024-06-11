@@ -10,7 +10,7 @@ function HomePage () {
         <>
         <Floater />
         <Header />
-        <SwiperComponent />
+        <SwiperComponent /> 
         </>
     );
 }

@@ -1,16 +1,23 @@
 import React from 'react';
+import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper';
+
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 import 'swiper/swiper-bundle.css';
 import '../styles/css/Swiper.css';
 
+import Slide1Image from '../images/slider_1.png';
+import Slide2Image from '../images/slider_2.png';
 
-// Установка модулей Swiper
-SwiperCore.use([Pagination, Navigation, Autoplay]);
 
 const SwiperComponent: React.FC = () => {
     return (
         <Swiper
+            modules={[Navigation, Pagination]}
             loop={true}
             speed={1000}
             autoplay={{
@@ -27,7 +34,7 @@ const SwiperComponent: React.FC = () => {
             }}
         >
             <SwiperSlide>
-                <img src="source/images/slider_1.png" alt="Slide 1" />
+                <img src={Slide1Image} alt="Slide 1" />
                 <div className="text-slide-1 swiper-text" id="swiper-learn">Learn languages and connect with the world</div>
                 <div className="button-container">
                     <a href="https://wa.me/994702260990">
@@ -36,7 +43,7 @@ const SwiperComponent: React.FC = () => {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <img src="source/images/slider_2.png" alt="Slide 2" />
+                <img src={Slide2Image} alt="Slide 2" />
                 <div className="text-slide-2 swiper-text" id="swiper-global">Become a global citizen with multi-language</div>
                 <div className="button-container">
                     <a href="https://wa.me/994702260990">
