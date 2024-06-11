@@ -2,6 +2,7 @@ import React from 'react';
 
 import Floater from '../components/Floater';
 import Header from '../components/Header';
+import SwiperComponent from '../components/Swiper';
 
 
 function HomePage () {
@@ -9,6 +10,7 @@ function HomePage () {
         <>
         <Floater />
         <Header />
+        <SwiperComponent />
         </>
     );
 }
