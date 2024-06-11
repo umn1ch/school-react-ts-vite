@@ -1,0 +1,41 @@
+.video {
+    margin: 130px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & video {
+        padding: 0 15px;
+        width: 590px;
+    }
+
+    & img {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 1149px) {
+    .video {
+        flex-direction: column;
+
+        & video {
+            padding: 25px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .video {
+        width: 90%;
+
+        & video {
+            width: 100%;
+            margin-left: 10%;
+        }
+
+        & img {
+            width: 100%;
+            margin-left: 10%;
+        }
+    }
+}

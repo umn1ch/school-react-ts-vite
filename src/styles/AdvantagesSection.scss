@@ -1,0 +1,33 @@
+@media screen and (max-width: 767px) {
+    .cards-container {
+        flex-direction: column;
+    }
+}
+
+.advantages {
+    font-family: Poppins;
+    color: #333146;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+    margin-bottom: 130px;
+
+    & i {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1149px) {
+    .advantages {
+        max-width: 90%;
+    }
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

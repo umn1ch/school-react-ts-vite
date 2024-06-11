@@ -3,7 +3,8 @@ import React from 'react';
 import Floater from '../components/Floater';
 import Header from '../components/Header';
 import SwiperComponent from '../components/Swiper';
-
+import VideoSection from '../components/VideoSection';
+import AdvantagesSection from '../components/AdvantagesSection';
 
 function HomePage () {
     return (
@@ -11,6 +12,8 @@ function HomePage () {
         <Floater />
         <Header />
         <SwiperComponent /> 
+        <VideoSection />
+        <AdvantagesSection />
         </>
     );
 }
