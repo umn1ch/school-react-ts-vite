@@ -1,0 +1,152 @@
+.top-bar {
+    background-color: #1b1a2f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: "Roboto";
+
+    & i {
+        padding-right: 10px;    
+    }
+    
+    & .language-switch img {
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    & ul {
+        list-style: none !important; 
+        margin: 0;
+    }
+
+    & ul li {
+        margin-right: 20px;
+    }
+}
+
+.contact-info ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1149px) {
+    .top-bar {
+        padding: 5px 10px;
+    }
+    
+    .top-bar ul li {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .top-bar {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 15px;
+
+        & ul {
+            flex-direction: column;
+        }
+
+        & ul li {
+            padding-bottom: 5px;
+        }
+    }
+    .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+nav {
+    background-color: rgba(252, 240, 3, 0.1);
+    position: absolute; 
+    top: 37;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    height: 106px;
+    z-index: 1000; 
+
+    & .logo img {
+        height: 100px; 
+        width: auto; 
+    }
+
+    & ul {
+        display: flex;
+        list-style: none !important; // Добавлено !important для устранения конфликтов
+    }
+
+    & ul li {
+        margin-right: 20px;
+    }
+
+    & ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: Rubik;
+        font-weight: 500;
+    }
+
+    & ul li a.active {
+        color: #e4181f;
+    }
+
+    & ul li a:hover {
+        color: #e4181f;
+    }
+
+    & a, a:hover, a:focus {
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1149px) {
+    nav {
+        padding: 5px 10px;
+    }
+    
+    nav .logo img {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    nav {
+        font-size: 14px;
+        padding: 5px 0;
+
+        & .logo img {
+            height: 40px;
+        }
+
+        & ul li:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        & ul li:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        display: none;
+    }
+}
