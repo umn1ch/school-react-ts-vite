@@ -1,0 +1,90 @@
+.course-card {
+    flex: 0 0 30%; 
+    max-width: 30%;
+    margin: 50px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    background: #fff;
+}
+
+.image-wrapper {
+    width: 100%;
+    overflow: hidden; 
+}
+
+.course-link {
+    display: block;
+    width: 100%;
+}
+
+.courses-link {
+    text-decoration: none;
+    color: #333146;
+    transition: all 0.3s ease-in-out;
+}
+
+.courses-link:hover {
+    color:#e4181f;
+    transition: all 0.3s ease-in-out;
+}
+
+.course-card-image {
+    width: 100%;
+    transform: scale(1) rotate(0deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.course-card-image:hover {
+    transform: scale(1.1) rotate(4deg);
+}
+
+.courses-info {
+    width: calc(100% - 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.courses-title {
+    color: #323232;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.courses-more-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 12px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.courses-button {
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+    background: #e4181f;
+    font-weight: 500;
+    font-family: Rubik;
+    transition: all 0.3s ease-in-out;
+}
+
+.courses-button:hover {
+    background: #1b1a2f;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+    .course-card {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+}

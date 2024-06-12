@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import SwiperComponent from '../components/Swiper';
 import VideoSection from '../components/VideoSection';
 import AdvantagesSection from '../components/AdvantagesSection';
+import CoursesSection from '../components/CoursesSection';
 
 function HomePage () {
     return (
@@ -14,6 +15,7 @@ function HomePage () {
         <SwiperComponent /> 
         <VideoSection />
         <AdvantagesSection />
+        <CoursesSection  />
         </>
     );
 }

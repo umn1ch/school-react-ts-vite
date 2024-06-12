@@ -1,0 +1,21 @@
+.courses {
+    font-family: Poppins;
+    color: #333146;
+    padding: 130px 0 80px;
+    background: #f6f8fa;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses-container {
+    max-width: 1240px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: flex-start;
+}
