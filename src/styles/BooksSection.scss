@@ -1,0 +1,63 @@
+.books {
+    font-family: Poppins;
+    color: #333146;
+    padding: 130px 0 80px;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// .draggable {
+//     position: absolute;
+//     right: 25%;
+//     top: 27%;
+// }
+
+.gif-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.swiper {
+    max-width: 1240px;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.books-swiper .swiper-slide img {
+    display: block;
+    width: 40dvh;
+    height: 40dvh;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1149px) {
+
+    .swiper {
+        max-width: 90%;
+    }
+
+    .books-swiper .swiper-slide img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .books-swiper .swiper-slide img {
+        width: 100%;
+    }
+}

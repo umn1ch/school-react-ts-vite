@@ -6,6 +6,8 @@ import SwiperComponent from '../components/Swiper';
 import VideoSection from '../components/VideoSection';
 import AdvantagesSection from '../components/AdvantagesSection';
 import CoursesSection from '../components/CoursesSection';
+import CallToActionSection from '../components/CallToActionSection';
+import BooksSection from '../components/BooksSection';
 
 function HomePage () {
     return (
@@ -16,6 +18,8 @@ function HomePage () {
         <VideoSection />
         <AdvantagesSection />
         <CoursesSection  />
+        <CallToActionSection />
+        <BooksSection  />
         </>
     );
 }
