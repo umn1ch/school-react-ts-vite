@@ -56,12 +56,14 @@
     align-items: center;
     justify-content: center;
     z-index: 10;
+    transition: all 0.2s ease-in-out;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
     background-color: #e4181f;
     color: #fff;
+    transition: all 0.2s ease-in-out;
 }
 
 .swiper-button-next::after,
@@ -97,10 +99,12 @@
     background-color: rgb(27, 26, 47);
     color: #fff;
     text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
 }
 
 .basic-button:hover {
     background-color: #e4181f;
+    transition: all 0.3s ease-in-out;
 }
 
 .basic-button:active {

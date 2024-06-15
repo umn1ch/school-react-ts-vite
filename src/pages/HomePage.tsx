@@ -8,6 +8,8 @@ import AdvantagesSection from '../components/AdvantagesSection';
 import CoursesSection from '../components/CoursesSection';
 import CallToActionSection from '../components/CallToActionSection';
 import BooksSection from '../components/BooksSection';
+import StartNowSection from '../components/StartNowSection';
+import Footer from '../components/Footer';
 
 function HomePage () {
     return (
@@ -20,6 +22,8 @@ function HomePage () {
         <CoursesSection  />
         <CallToActionSection />
         <BooksSection  />
+        <StartNowSection />
+        <Footer />
         </>
     );
 }

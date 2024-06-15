@@ -71,12 +71,16 @@
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 10;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   background-color: #e4181f;
   color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .swiper-button-next::after,
@@ -116,10 +120,14 @@
   background-color: rgb(27, 26, 47);
   color: #fff;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .basic-button:hover {
   background-color: #e4181f;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .basic-button:active {

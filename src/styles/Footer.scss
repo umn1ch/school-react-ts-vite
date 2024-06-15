@@ -1,0 +1,157 @@
+// FOOTER 
+footer {
+    position: relative;
+    width: 100%;    
+    background-color: #1b1a2f;
+    color: #fff;
+    padding: 40px 20px;
+    background-image: url('../../src/images/footer-shape-1.png');
+    background-size: cover;
+    background-position-y: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+    & p a {
+        text-decoration: none;
+        color: #e4181f;
+        font-weight: 500;
+    }
+}
+
+.footer-column:not(:first-child) {
+    margin-left: 100px;
+}
+
+.footer-column img {
+    width: 150px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-column address, .footer-column p {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #e4181f;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.footer i {
+    padding-right: 10px;
+}
+
+.footer-social a:hover {
+    color: #e4181f;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom a {
+    color: #e4181f;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-shapes {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-shapes img {
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .footer-container {
+        flex-wrap: wrap;
+    }
+    .footer-column {
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h2 {
+        text-align: center;
+    }
+}
