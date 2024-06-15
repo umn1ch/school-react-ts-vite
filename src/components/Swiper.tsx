@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 
 
 import 'swiper/css';
@@ -17,7 +18,7 @@ import Slide2Image from '../images/slider_2.png';
 const SwiperComponent: React.FC = () => {
     return (
         <Swiper
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay]}
             loop={true}
             speed={1000}
             autoplay={{
