@@ -59,11 +59,13 @@
     padding: 7px 15px;
     box-shadow: rgb(0 0 0 / 10%) 2px 2px 13px;
     position: absolute;
-    left: -120px; 
+    right: 100%; 
+    transform: translateX(-10px); 
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid rgb(226, 226, 226);
+    white-space: nowrap;
 }
 
 .whatsapp-text {
@@ -75,8 +77,8 @@
     content: "";
     position: absolute;
     top: 50%;
-    right: -8px;
-    transform: translateY(-50%);
+    left: 100%;
+    transform: translateY(-50%) translateX(0px); 
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent transparent white;

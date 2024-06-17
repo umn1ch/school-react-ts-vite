@@ -2,6 +2,10 @@ import React from 'react';
 
 import CoursesCard from './CoursesCard';
 
+import { useTranslation } from "react-i18next";
+import '../i18n';
+import '../hooks/use-localstorage';
+
 import englishCoursesImage from '../images/English courses.png';
 import azerbaijaniCoursesImage from '../images/Azerbaijani courses.png';
 import russianCoursesImage from '../images/Russian courses.png';
@@ -12,52 +16,41 @@ import frenchCoursesImage from '../images/French courses.png';
 import '../styles/css/CoursesSection.css';
 
 function CoursesSection() {
+    const { t } = useTranslation();
     return (
         <>
             <section className="courses">
-                <h2 id="popular-courses">Our Popular Courses</h2>
+                <h2 id="popular-courses">{t('popular-courses')}</h2>
                 <div className="courses-container">
                     <CoursesCard
                         imageSource={englishCoursesImage}
-                        titleId="courses-en"
-                        buttonId="courses-more1"
-                        title="English Courses Hekimler Ucun"
-                        buttonText="More"
+                        title="courses-en"
+                        buttonText="courses-more1"
                     />
                     <CoursesCard
                         imageSource={azerbaijaniCoursesImage}
-                        titleId="courses-az"
-                        buttonId="courses-more2"
-                        title="Azerbaijani Courses"
-                        buttonText="More"
+                        title="courses-az"
+                        buttonText="courses-more2"
                     />
                     <CoursesCard
                         imageSource={russianCoursesImage}
-                        titleId="courses-ru"
-                        buttonId="courses-more3"
-                        title="Russian Courses"
-                        buttonText="More"
+                        title="courses-ru"
+                        buttonText="courses-more3"
                     />
                     <CoursesCard
                         imageSource={germanCoursesImage}
-                        titleId="courses-de"
-                        buttonId="courses-more4"
-                        title="German Courses"
-                        buttonText="More"
+                        title="courses-de"
+                        buttonText="courses-more4"
                     />
                     <CoursesCard
                         imageSource={spanishCoursesImage}
-                        titleId="courses-sp"
-                        buttonId="courses-more5"
-                        title="Spanish Courses"
-                        buttonText="More"
+                        title="courses-sp"
+                        buttonText="courses-more5"
                     />
                     <CoursesCard
                         imageSource={frenchCoursesImage}
-                        titleId="courses-fr"
-                        buttonId="courses-more6"
-                        title="French Courses"
-                        buttonText="More"
+                        title="courses-fr"
+                        buttonText="courses-more6"
                     />
                 </div>
             </section>

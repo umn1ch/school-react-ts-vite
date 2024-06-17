@@ -54,6 +54,10 @@ footer {
 }
 
 .footer-column:not(:first-child) {
+  white-space: nowrap;
+}
+
+.footer-column:not(:first-child) {
   margin-left: 100px;
 }
 

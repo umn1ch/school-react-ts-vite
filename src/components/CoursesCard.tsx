@@ -1,15 +1,20 @@
 import React from 'react';
+
+import { useTranslation } from "react-i18next";
+import '../i18n';
+import '../hooks/use-localstorage';
+
 import '../styles/css/CoursesCard.css';
 
 interface CoursesCardProps {
     imageSource: string;
-    titleId?: string;
-    buttonId?: string;
     title: string;
     buttonText: string;
 }
 
 const CoursesCard: React.FC<CoursesCardProps> = (props) => {
+    const { t } = useTranslation();
+
     return (
         <div className="course-card">
             <div className="image-wrapper">
@@ -19,10 +24,10 @@ const CoursesCard: React.FC<CoursesCardProps> = (props) => {
             </div>
             <div className="courses-info">
                 <div className="courses-title">
-                    <a href="" className="courses-link" id={props.titleId}>{props.title}</a>
+                    <a href="" className="courses-link" id={props.titleId}>{t(props.title)}</a>
                 </div>
                 <div className="courses-more-button">
-                    <a href="" className="courses-button" id={props.buttonId}>{props.buttonText}</a>
+                    <a href="" className="courses-button" id={props.buttonId}>{t(props.buttonText)}</a>
                 </div>
             </div>
         </div>

@@ -1,40 +1,36 @@
 import React from 'react';
-
 import AdvantagesCard from './AdvantagesCard';
+import { useTranslation } from "react-i18next";
+import '../i18n';
+import '../hooks/use-localstorage';
+import '../styles/css/AdvantagesSection.css';
 
-import '../styles/css/AdvantagesSection.css'
+const AdvantagesSection: React.FC = () => {
+    const { t } = useTranslation();
 
-function AdvantagesSection () {
     return (
-        <>
-            <section className="advantages">
-                <h2 id="advantages">Our advantages</h2>
-                <div className="cards-container">
-                    <AdvantagesCard 
-                        title="100% Effective" 
-                        description="You will be taught by the best translators in English language courses"
-                        iconClass="fi fi-tr-lesson"
-                        titleId="advantages-effective"
-                        descriptionId="advantages-translators"
-                    />
-                    <AdvantagesCard 
-                        title="Intensive course" 
-                        description="Opportunity to study according to the accelerated method of Kifayat Ahmad gizi without homework"
-                        iconClass="fi fi-rr-clock"
-                        titleId="advantages-course"
-                        descriptionId="advantages-opportunity"
-                        cardId="second-card"
-                    />
-                    <AdvantagesCard 
-                        title="Textbooks" 
-                        description="There is a wide range of additional materials and resources for our students"
-                        iconClass="fi fi-tr-student-alt"
-                        titleId="advantages-textbooks"
-                        descriptionId="advantages-range"
-                    />
-                </div>
-            </section>
-        </>);
-}
+        <section className="advantages">
+            <h2 id="advantages">{t('advantages')}</h2>
+            <div className="cards-container">
+                <AdvantagesCard 
+                    titleId="advantages-effective" 
+                    descriptionId="advantages-translators"
+                    iconClass="fi fi-tr-lesson"
+                />
+                <AdvantagesCard 
+                    titleId="advantages-course" 
+                    descriptionId="advantages-opportunity"
+                    iconClass="fi fi-rr-clock"
+                    cardId="second-card"
+                />
+                <AdvantagesCard 
+                    titleId="advantages-textbooks" 
+                    descriptionId="advantages-range"
+                    iconClass="fi fi-tr-student-alt"
+                />
+            </div>
+        </section>
+    );
+};
 
 export default AdvantagesSection;

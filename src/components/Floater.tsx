@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import '../i18n';
+import '../hooks/use-localstorage';
 import '../styles/css/Floater.css';
 
 const Floater: React.FC = () => {
@@ -51,7 +53,7 @@ const Floater: React.FC = () => {
                 </a>
                 <div className="whatsapp-text-bubble">
                     <span className="whatsapp-text" id="write-to-us">
-                        {t('Write to us')}
+                        {t('write-to-us')}
                     </span>
                 </div>
             </div>

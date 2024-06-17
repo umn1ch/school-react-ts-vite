@@ -15,7 +15,7 @@ function HomePage () {
     return (
         <>
         <Floater />
-        <Header />
+        {/* <Header /> */}
         <SwiperComponent /> 
         <VideoSection />
         <AdvantagesSection />

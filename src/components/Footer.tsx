@@ -1,11 +1,17 @@
 import React from 'react';
 
+import { useTranslation } from "react-i18next";
+import '../i18n';
+import '../hooks/use-localstorage';
+
 import '../styles/css/Footer.css';
 
 import FooterLogo from '../images/logo brand.png';
 import DecorativeShape from '../images/footer-2.png';
 
 const Footer: React.FC = () => {
+    const { t } = useTranslation();
+
     return (
         <>
             <footer className="footer">
@@ -13,39 +19,31 @@ const Footer: React.FC = () => {
                 <div className="footer-column">
                     <img src={FooterLogo} alt="Logo" className="footer-logo" />
                     <address id="footer-address">
-                        1, Fikret Amirov Street Baku Azerbaijan
+                        {t ('top-bar-address')}
                     </address>
                 </div>
                 <div className="footer-column">
-                    <h3 id="footer-popular-courses">Popular Courses</h3>
+                    <h3 id="footer-popular-courses">{t('footer-popular-courses')}</h3>
                     <ul className="footer-links">
-                        <li><a href="#" id="footer-en-courses"><i className="fi fi-rr-angle-double-small-right"></i>English
-                                Courses</a></li>
-                        <li><a href="#" id="footer-az-courses"><i className="fi fi-rr-angle-double-small-right"></i>Azerbaijani Courses</a></li>
-                        <li><a href="#" id="footer-ru-courses"><i className="fi fi-rr-angle-double-small-right"></i>Russian
-                                Courses</a></li>
-                        <li><a href="#" id="footer-de-courses"><i className="fi fi-rr-angle-double-small-right"></i>German
-                                Courses</a></li>
-                        <li><a href="#" id="footer-sp-courses"><i className="fi fi-rr-angle-double-small-right"></i>Spanish
-                                Courses</a></li>
+                        <li><a href="#" id="footer-en-courses"><i className="fi fi-rr-angle-double-small-right"></i>{t('footer-en-courses')}</a></li>
+                        <li><a href="#" id="footer-az-courses"><i className="fi fi-rr-angle-double-small-right"></i>{t('footer-az-courses')}</a></li>
+                        <li><a href="#" id="footer-ru-courses"><i className="fi fi-rr-angle-double-small-right"></i>{t('footer-ru-courses')}</a></li>
+                        <li><a href="#" id="footer-de-courses"><i className="fi fi-rr-angle-double-small-right"></i>{t('footer-de-courses')}</a></li>
+                        <li><a href="#" id="footer-sp-courses"><i className="fi fi-rr-angle-double-small-right"></i>{t('footer-sp-courses')}</a></li>
                     </ul>
                 </div>
                 <div className="footer-column">
-                    <h3 id="footer-info">Information</h3>
+                    <h3 id="footer-info">{t('footer-info')}</h3>
                     <ul className="footer-links">
-                        <li><a href="#" id="footer-news"><i className="fi fi-rr-angle-double-small-right"></i>News</a></li>
-                        <li><a href="#" id="footer-about"><i className="fi fi-rr-angle-double-small-right"></i>About us</a>
-                        </li>
-                        <li><a href="#" id="footer-study"><i className="fi fi-rr-angle-double-small-right"></i>Studies</a>
-                        </li>
-                        <li><a href="#" id="footer-contact"><i className="fi fi-rr-angle-double-small-right"></i>Contact</a>
-                        </li>
-                        <li><a href="#" id="footer-book-store"><i className="fi fi-rr-angle-double-small-right"></i>Book
-                                Store</a></li>
+                        <li><a href="#" id="footer-news"><i className="fi fi-rr-angle-double-small-right"></i>{t('footer-news')}</a></li>
+                        <li><a href="#" id="footer-about"><i className="fi fi-rr-angle-double-small-right"></i>{t('footer-about')}</a></li>
+                        <li><a href="#" id="footer-study"><i className="fi fi-rr-angle-double-small-right"></i>{t('footer-study')}</a></li>
+                        <li><a href="#" id="footer-contact"><i className="fi fi-rr-angle-double-small-right"></i>{t('footer-contact')}</a></li>
+                        <li><a href="#" id="footer-book-store"><i className="fi fi-rr-angle-double-small-right"></i>{t('footer-book-store')}</a></li>
                     </ul>
                 </div>
                 <div className="footer-column">
-                    <h3 id="footer-contact-us">Contact us</h3>
+                    <h3 id="footer-contact-us">{t('footer-contact-us')}</h3>
                     <p>+994 (70) 226-09-90</p>
                     <p>+994 (55) 226-09-90</p>
                     <p><a href="mailto:info@kifayatahmadgizi.co.uk">info@kifayatahmadgizi.co.uk</a></p>
