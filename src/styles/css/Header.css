@@ -13,6 +13,7 @@
   padding: 10px 20px;
   font-size: 14px;
   font-family: "Roboto";
+  z-index: 10000;
 }
 .top-bar i {
   padding-right: 10px;
@@ -42,7 +43,7 @@
           flex-direction: row;
 }
 
-@media screen and (max-width: 1149px) {
+@media screen and (max-width: 1200px) {
   .top-bar {
     padding: 5px 10px;
   }

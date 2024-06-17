@@ -1,8 +1,6 @@
 import React from "react";
 import '../styles/css/Header.css';
-import az from '../images/az.png'; 
-import en from '../images/en.png';
-import ru from '../images/ru.png';
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header: React.FC = () => {
     return (
@@ -31,11 +29,7 @@ const Header: React.FC = () => {
                     </li>
                 </ul>
             </div>
-            <div className="language-switch">
-                <img src={az} alt="Azerbaijan" width="35" id="az" />
-                <img src={en} alt="UK" width="35" id="en" />
-                <img src={ru} alt="Russia" width="35" id="ru" />
-            </div>
+            <LanguageSwitcher />
         </div>
     );
 }

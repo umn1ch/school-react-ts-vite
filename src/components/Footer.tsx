@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
                     </ul>
                 </div>
                 <div className="footer-column">
-                    <h3 id="footer-contact">Contact us</h3>
+                    <h3 id="footer-contact-us">Contact us</h3>
                     <p>+994 (70) 226-09-90</p>
                     <p>+994 (55) 226-09-90</p>
                     <p><a href="mailto:info@kifayatahmadgizi.co.uk">info@kifayatahmadgizi.co.uk</a></p>

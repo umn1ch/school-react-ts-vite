@@ -1,12 +1,15 @@
 import React, { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import '../styles/css/Floater.css';
 
 const Floater: React.FC = () => {
+    const { t } = useTranslation();
+
     const scrollToTopBtnRef = useRef<HTMLButtonElement>(null);
 
     useEffect(() => {
         const handleScroll = () => {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            if (window.scrollY > 100) {
                 scrollToTopBtnRef.current?.classList.add("visible");
             } else {
                 scrollToTopBtnRef.current?.classList.remove("visible");
@@ -21,8 +24,10 @@ const Floater: React.FC = () => {
     }, []);
 
     const scrollToTop = () => {
-        document.body.scrollTop = 0; 
-        document.documentElement.scrollTop = 0; 
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     };
 
     return (
@@ -36,11 +41,18 @@ const Floater: React.FC = () => {
                 <i className="fi fi-rs-angle-small-up"></i>
             </button>
             <div className="whatsapp-container">
-                <a href="https://wa.me/994702260990" target="_blank" className="whatsapp-button" rel="noopener noreferrer">
+                <a
+                    href="https://wa.me/994702260990"
+                    target="_blank"
+                    className="whatsapp-button"
+                    rel="noopener noreferrer"
+                >
                     <i className="fi fi-brands-whatsapp"></i>
                 </a>
                 <div className="whatsapp-text-bubble">
-                    <span className="whatsapp-text" id="write-to-us">Write to us</span>
+                    <span className="whatsapp-text" id="write-to-us">
+                        {t('Write to us')}
+                    </span>
                 </div>
             </div>
         </div>
